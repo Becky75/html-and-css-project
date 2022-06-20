@@ -1,0 +1,18 @@
+
+
+table{border: 2px solid red;}
+
+td:hover{backgroud-color: black;
+color:green;}
+
+.font_1{
+background-color: black;
+color: green;
+font-size: large;
+}
+.font_2 {background-color: darkblue;
+color: white;
+font-size: medium;}
+
+ol{border: 2px solid purple}
+ul[background-color: white }
