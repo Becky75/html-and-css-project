@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>dog stuff</title><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Knotty Creations</title>
+<meta charset="utf-8">
+</head>
+<body>haulters and stuff
+<header>
+<h1>paracord tack and extras</h1>
+<h3> unique designs</h3>
+<main> choose your colors and design for estmate</main>
+<p> we make paraccord hualters as well as collars</p>
+</body>
+<footer>we can make you ideas reality/footer>
+<meta charset="utf-8">
+</head>
+<body>pictures
+<main> choose your colors and design for estmate</main>
+<img src="images/funny-dog.jpg">
+<a href="html documents">https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/</a>
