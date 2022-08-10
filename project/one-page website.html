@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset+"utf-8">
+        <meta charset="utf-8">
         <title>Knotty Creations</title>
-        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <meta name="viewport" content="width=device-width, intitial-scale= 1">
         <link rel="stylesheet" href="css/one_page.css">
-            <script src="JS/one_page_website.js" defer></script>
+            <script src="js/one_page_website.js" defer></script>
     </head>
   
     <body>
         <h2 style="text-align:center">Lightbox</h2>
         <div class="row">
             <div class="column">
-                <img src="images/KnB.jpg" style="width: 100%;" onclick="openModal();currentSlide(1)"class="hover-shadow cursor">
+                <img src="images/KnB.jpg" style="width: 100%;" onclick="openModal();currentSlide(1)"class="hover-shadow">
             </div>
             <div class="column">
-                <img src="images/Horses.jpg" style="width: 100%"; onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                <img src="images/Horses.jpg" style="width: 100%"; onclick="openModal();currentSlide(2)" class="hover-shadow">
             </div>
             <div class="column">
-                <img src="images/Tonka.jpg" style="width: 100%;" onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
+                <img src="images/Tonka.jpg" style="width: 100%;" onclick="openModal(); currentSlide(3)" class="hover-shadow">
             </div>
             <div class="column">
-                <img src="images/Mad.jpg" style="width: 100%;" onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
+                <img src="images/Mad.jpg" style="width: 100%;" onclick="openModal(); currentSlide(3)" class="hover-shadow">
             </div>
             
         </div>
-        </div>
+
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;
             </span>
             <div class="modal-content">
+                <div class="mySlides"></div>
                 <div class="numbertext">1/4</div>
                 <img src="images/KnB.jpg" style="width: 100%">
             </div>
@@ -39,17 +40,19 @@
                 <img src="images/Horses.jpg" style="width:100%">
             </div>
 
-            <div class="numbertext">3/4</div>
             <div class="mySlides">
+            <div class="numbertext">3/4</div>
+           
             <img src="images/Tonka.jpg" style="width:100%">
             </div>
 
-            <div class="numbertext">4/4</div>
             <div class="mySlides">
+            <div class="numbertext">4/4</div>
+           
                 <img src="images/Mad.jpg" style="width:100%">
             </div>
             
-        <a class="prev" onclick="plusASlides(-1)">&#10094;</a>
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
         <a class="next"onclick="plusSlide(1)">&#10095;</a>
         <div class="caption-container">
             <p id="caption"></p>
@@ -58,10 +61,10 @@
             <img class="demo cursor" src="images/KnB.jpg" style="width:100%" onclick="currentSlide(1)"alt="Nature  and sunrise">
         </div>
         <div class="column">
-            <img class="demo cursor" src="images/Horses.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            <img class="demo cursor" src="images/Horses.jpg" style="width:100%" onclick="currentSlide(2)" alt="Saying 'Hello' to the nabour ">
         </div>
         <div class="column">
-            <img class="demo cursor" src="images/Tonka.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountians and fjord">
+            <img class="demo cursor" src="images/Tonka.jpg" style="width:100%" onclick="currentSlide(3)" alt="Porcupine Ceek Trail">
         </div>
         <div class="column">
             <img class="demo cursor" src="images/Mad.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northen Lights">
@@ -124,7 +127,6 @@
 
 <img src="./images/purple_halter.jpg" alt="">
 <div>
-<frame>
 <h3>click to enlarge</h3>
 <p>beautiful purple_halter</p>
 </div>
