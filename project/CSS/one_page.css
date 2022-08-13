@@ -192,4 +192,76 @@ margin-bottom: -4px;
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+/*this is for the fade*/
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fde-out {
+    opacity: 0;
+    transition: none;
+}
+html {
+    background-color: lightblue;
+}
+/* this is for the popup form*/
+*{box-sizing: border-box;}
 
+/*Button used to open the contact form-fixed at bottom of the page*/
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+/*add styles to the form contianer*/
+.form-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(105, 170, 196);
+}
+/* full-width input fields*/
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+/*Sets a style for the submit/login button*/
+.form-container .btn{
+    background-color: #c63b9d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+/*Add a red background color to the cancel buttons*/
+.form-container .cancel{
+    background-color: red;
+}
+/*add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover{
+    opacity: 1;
+}
+/*zoom in affect*/
+@keyframes zoominoutsinglefeatured{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.single-featured-image-header img{
+    animation: zoominoutsinglefeature 15s forwards;
+}

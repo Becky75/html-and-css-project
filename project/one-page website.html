@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+       
         <meta charset="utf-8">
         <title>Knotty Creations</title>
-        <meta name="viewport" content="width=device-width, intitial-scale= 1">
+          <meta name="viewport" content="width=device-width, intitial-scale= 1">
+      <!--this is for a sticky part-->
+      <style>
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                background-color: rgb(13, 211, 225);
+                padding: 50px;
+                font-size: 20px;
+            }
+        </style>
         <link rel="stylesheet" href="css/one_page.css">
             <script src="js/one_page_website.js" defer></script>
+      
     </head>
   
     <body>
-        <h2 style="text-align:center">Lightbox</h2>
+        <h4>Scroll for options</h4>
+        <P>scroll down</P>
+        <div class="sticky">alpaca.love5@gmail.com</div>
+    <!--this ends the sticky part-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded',()=>{});
+        </script>
+       
+
+        <h2 style="text-align:center">Knotty Creations</h2>
         <div class="row">
             <div class="column">
                 <img src="images/KnB.jpg" style="width: 100%;" onclick="openModal();currentSlide(1)"class="hover-shadow">
@@ -106,10 +129,10 @@
 <div>
 <div>
 
-<img src="images/mountians.jpg" alt="">
+<img src="images/mountians.jpg" alt="" style="width: 50%;">
 <div>
 
-<h3>click cto enlarge</h3>
+<h3 style="font-size:2vw;">click to enlarge</h3>
 <p>Some of our options</p>
 </div>
 </div>
@@ -125,7 +148,8 @@
 <div>
 <div>
 
-<img src="./images/purple_halter.jpg" alt="">
+<img src="./images/purple_halter.jpg" alt="" style="width: 50%;">
+
 <div>
 <h3>click to enlarge</h3>
 <p>beautiful purple_halter</p>
@@ -144,6 +168,8 @@
 <div>
 <div>
 <h1>message for your orders</h1>
+
+</style>
 <div>
 <h2><span><em>some custom orders availale</em></span>
 <br />get your haulter today!
@@ -170,10 +196,23 @@ please provide us with your contact info
 </div>
 </section>
 <!--end RSVP-->
+<!--login form-->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Password" name="email" required>
+        <label for="psw"><b>Pasword</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" online="closeForm()">Close</button>
+    </form>
+</div>
+<!--end of login form-->
 <!--footer-->
 <div>
-www.Knotty Exspessions.com &nbsp; &copy;2022
+www.Knotty Creations.com &nbsp; &copy;2022
 </div>
 <!--footer-->
 
