@@ -25,3 +25,6 @@ li {
 footer{ 
     display: block;
 }
+.remove{
+    padding-bottom: 5px;
+}

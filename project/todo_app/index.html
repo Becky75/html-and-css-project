@@ -11,8 +11,20 @@
     </head>
     <body>
         <input id="task"><button id="add">Add Item</button>
+    <!--this is new for end challenge-->
+    <p id="demo"></p>
+    <script>
+        document.getElementById("mybtn").addEventListener("click",displayDate);
+        function Display(){
+            document.getElementById("demo").innerHTML=date();
+        }
+    </script>
         <hr><!--this is a horizontal tag-->
         <div id="todos"></div>
+     
+
+
+
         <script src="js/todo.js"></script>
     <p id="mydog"></p>
     <p id="mydog"></p>
@@ -22,7 +34,13 @@
     var JSONstring=JSON.stringify(dog);
     document.getElementById("mydog").innerHTML=JSONstring;
     </script>
-   
+   <!--this is to remove an item from list -->
+    <script>
+        function myfuunction(p){
+            return p;
+        }
+        docuent.getElementById("mydog").innerHTML=myfunction();
+    </script> 
     </body>
     <footer>
       
