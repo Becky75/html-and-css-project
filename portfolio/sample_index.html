@@ -4,7 +4,7 @@
 <!-- Head -->
 	<head>
 		<meta charset="UTF-8">
-		<title>Your name here </title>
+		<title>Becky Langlois </title>
 		  <link rel="stylesheet" type="text/css" href="Stylesheet/sample_Portfolio.css">
 	</head>
 		  
@@ -15,27 +15,32 @@
 <!-- Navbar -->
 	<div class="Navbar">
 		<a class="active" href="#Home">Home</a> 
-		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+		<a href="#Slideshow">Slideshow</a> 
+<!-- This is a new section -->
 		<a href="#About">About</a>
 		<a href="#GitHub">GitHub</a>
-		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> 
+<!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
 	</div>
 
 <!-- Home -->
 	<div id="Home">
-		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+ <!-- Breaks inserted to add space between navbar and first heading -->
 		<br>
 		
 <!-- Video -->
-		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+		<video autoplay muted loop id="Typing_Video"> 
+<!-- Makes the video play automatically, on a loop and with no sound -->
 			<source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
-			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+			Your browser does not support HTML5 video. 
+<!-- Display message if video fails to run -->
 		</video>
 	</div>
 
 <!-- Video text --> 
 	<div class="Video_Text"> 
-		<h1 style="color:white;">Your Name's Portfolio</h1>
+		<h1 style="color:white;">Becky Langlois Portfolio</h1>
 			<p> 
 			  <strong>
 					<center>
@@ -45,7 +50,7 @@
 						</q>	
 						<br>-Joseph Weizenbaum<br>
 						<br>
-						My name is ____. Welcome to my portfolio website. <br>
+						My name is Becky Langlois. Welcome to my portfolio website. <br>
 						On it, I will tell you about my background and experience.<br>
 						<br>Thank you for stopping by and enjoy! 
 					</center>	
@@ -119,13 +124,14 @@
 
 <!-- About section -->
   <div class="Row" id="About"> 
-	<div class="Column_2"> <!-- Left column -->
+	<div class="Column_2"> 
+<!-- Left column -->
 	  <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
 	</div>
   
 	<div class="Column_1"> <!-- Right column -->
 	  <h1>About</h2>
-	    <p>I am a software developer who loves to code! As a father of two, I enjoy time with my family and traveling. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+	    <p>I am a software developer who loves to code! I enjoy time with my family and horseback riding. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
 	</div>
   </div>
 
@@ -147,7 +153,8 @@
   <div id="Contact"> 
     <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
 	  <div class="form-popup" id="myForm">
-	    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+	    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+ <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
 		<h1>Contact</h1>
 			<label for="name"><b>Name</b></label>
 			  <input type="text" placeholder="Type your name here" name="name" required>
