@@ -36,11 +36,7 @@ show();
     show();
     return false;
 }
-/*this tells the browser how to display the todo array after an item has been removed*/
-    var buttons=document.getElementsByClassName('remove');
-    for(var i=0;i<buttons.length;i++){
-    buttons[i].addEventListener('click',remove);
-};
+
 /*this function keeps the tasks permanetly displayed on the screen*/
 function show(){
     /*this sets up each task that was retrieved as a variable*/
@@ -50,11 +46,16 @@ function show(){
         /*this displays a task to the list in the order that it is inputed*/
         for(var i=0;i<todos.length;i++){
             /*this also displays the task as a list and creates the button with the "x"*/
-            html+='<li>'+todos[i]+'<button class="remove id="'+i+'">x</button></li>';
+            html+='<li>'+todos[i]+'<button class="remove" id="'+i+'">x</button></li>';
         } ;
         html+='</ul>';
         /*this displays the task as a list*/
         document.getElementById('todos').innerHTML=html;
+       /*this tells the browser how to display the todo array after an item has been removed*/
+    var buttons=document.getElementsByClassName('remove');
+    for(var i=0;i<buttons.length;i++){
+    buttons[i].addEventListener('click',remove);
+};
     }
 /*this displays the inputed task when the 'add item'button is clicked*/
         document.getElementById('add').addEventListener('click',add);
