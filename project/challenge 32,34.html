@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+    
+           <!--this is for keyframes-->
+           <!--smooth scroll section-->
+   <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    #section1{
+        height:600px;
+        background-color: pink;
+    }
+    #section2 {
+        height: 600px;
+        background-color: blueviolet;
+    }
+    div{
+        width: 100px;
+        height: 10px;
+        background: gray;
+        position:relative;
+        animation: mymove 5s infinite;
+    }
+    @keyframes mymove{
+        from{top: 0px;}
+        to{top: 20px;}
+    }
+    </style>
+</Head>
+<body>
+    <h1>smooth scroll</h1>
+    <div class="main" id="section1">
+        <h2>section 1</h2>
+        <p>click on link to see the "smooth" scrolling effect.</p>
+        <a href="#section2">click me to smooth scroll to section 2 below</a>
+        <p>Note: Remove the scroll-behovior property to remove smooth scrolling</p>
+    </div>
+    <div class="main" id="section2">
+        <h2>Section 2</h2>
+        <a href="#section1">click me to Smooth scroll to section 1 above</a>
+    </div>
+    <p><a href="https://www.w3schools.com/">visit w3schools.com</a></p>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="mydog"></p>
+
+        <script>
+        /*set the data as a key/value pair to save pair to be saved locally in your browers*/
+        localStorage.setItem("name,"Dax");
+        /*then use the key "name" to return its value "Dax"*/
+        document.getElementById("mydog").innerHTML = localStorage.getItem("name");
+    </script>
+        
+    </body>
+</html>
